@@ -1,11 +1,7 @@
-package epam;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class AppTest {
-
-    // ---- Cost / HouseConstruction tests ----
+class CostAndInterestTest {
 
     @Test
     void standardManualCostPerUnit1200() {
@@ -48,8 +44,6 @@ class AppTest {
         Cost cost = new Cost("luxury", 10, "manual");
         assertEquals(0, cost.calculateCost());
     }
-
-    // ---- Calculate / Interest tests ----
 
     @Test
     void simpleInterestBasicCase() {
